@@ -27,7 +27,7 @@ function App() {
       </div>
     </div>
     <div className="m-3 p-3 sm:m-10 bg-gray-100 shadow-md overflow-hidden">
-      <div className="mb-3 text-gray-400">Prophetic</div>
+      <div className="mb-3 text-gray-400">Prophecy</div>
       <div className="flex flex-wrap gap-1">
         {prophecy.map((book) => (
           <ProphecyBook book={book} key={prophecy.symbol} />
