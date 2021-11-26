@@ -2,8 +2,10 @@ import React from 'react';
 import './App.css';
 import HistoryBook from './components/HistoryBook';
 import WritingsBook from './components/WritingsBook';
-import history from './data/otHistorical';
+import ProphecyBook from './components/ProphecyBook';
+import history from './data/otHistory';
 import writings from './data/otWritings';
+import prophecy from './data/otProphecy';
 
 function App() {
   return (
@@ -26,6 +28,11 @@ function App() {
     </div>
     <div className="m-3 p-3 sm:m-10 bg-gray-100 shadow-md overflow-hidden">
       <div className="mb-3 text-gray-400">Prophetic</div>
+      <div className="flex flex-wrap gap-1">
+        {prophecy.map((book) => (
+          <ProphecyBook book={book} key={prophecy.symbol} />
+        ))}
+      </div>
     </div>
   </div>
   );
