@@ -14,7 +14,7 @@ function App() {
       <div className="mb-3 text-gray-400">History</div>
       <div className="flex flex-wrap gap-1">
         {history.map((book) => (
-          <HistoryBook book={book} key={history.symbol} />
+          <HistoryBook book={book} key={book.symbol} />
         ))}
       </div>
     </div>
@@ -22,7 +22,7 @@ function App() {
       <div className="mb-3 text-gray-400">Writings</div>
       <div className="flex flex-wrap gap-1">
         {writings.map((book) => (
-          <WritingsBook book={book} key={writings.symbol} />
+          <WritingsBook book={book} key={book.symbol} />
         ))}
       </div>
     </div>
@@ -30,7 +30,7 @@ function App() {
       <div className="mb-3 text-gray-400">Prophecy</div>
       <div className="flex flex-wrap gap-1">
         {prophecy.map((book) => (
-          <ProphecyBook book={book} key={prophecy.symbol} />
+          <ProphecyBook book={book} key={book.symbol} />
         ))}
       </div>
     </div>
