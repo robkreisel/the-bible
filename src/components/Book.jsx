@@ -1,5 +1,4 @@
 import React from "react";
-import BookDetails from "./BookDetails";
 
 
 export default function Book({ book }) {
@@ -32,7 +31,10 @@ export default function Book({ book }) {
 
   return (
     <div className={`p-2 md:p-3 bg-${colors.base}-300 hover:bg-${colors.base}-400 rounded-md shadow-md w-11 md:w-36`}>
-      <BookDetails book={book} key={book.symbol} />
+      <div className="text-gray-500 text-center hidden md:block">{book.name}</div>
+      <div className="text-sm md:text-5xl font-bold text-black text-center md:mb-2">{book.symbol}</div>
+      <div className="text-xs font-medium text-gray-500 text-center hidden lg:block">{book.author}</div>
+      <div className="text-xs font-medium text-gray-500 text-center hidden lg:block">{book.year}</div>
     </div>
   );
 }
