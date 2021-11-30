@@ -10,10 +10,10 @@ function App() {
       <div className="block">
         <OTDetails />
       </div>
-      <div className="block">
+      <div className="hidden">
         <NTDetails />
       </div>
-      <div className="block">
+      <div className="hidden">
         <OTChronological />
       </div>
     </div>
