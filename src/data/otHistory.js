@@ -2,6 +2,7 @@ export default [
     {
         name: "Genesis",
         symbol: "Ge",
+        category: "history",
         year: "1430 BC",
         era: ["creation", "patriarch"],
         author: "Moses",
@@ -10,6 +11,7 @@ export default [
     {
         name: "Exodus",
         symbol: "Ex",
+        category: "history",
         year: "1400 BC",
         era: "exodus",
         author: "Moses",
@@ -18,6 +20,7 @@ export default [
     {
         name: "Leviticus",
         symbol: "Lv",
+        category: "history",
         year: "1445 BC",
         era: "exodus",
         author: "Moses",
@@ -26,6 +29,7 @@ export default [
     {
         name: "Numbers",
         symbol: "Nu",
+        category: "history",
         year: "1400 BC",
         era: "exodus",
         author: "Moses",
@@ -34,6 +38,7 @@ export default [
     {
         name: "Deuteronomy",
         symbol: "Dt",
+        category: "history",
         year: "1400 BC",
         era: "exodus",
         author: "Moses",
@@ -42,6 +47,7 @@ export default [
     {
         name: "Joshua",
         symbol: "Js",
+        category: "history",
         year: "1375 BC",
         era: "conquest",
         author: "Joshua",
@@ -50,6 +56,7 @@ export default [
     {
         name: "Judges",
         symbol: "Ju",
+        category: "history",
         year: "1050 BC",
         era: "judges",
         author: "Samuel",
@@ -58,6 +65,7 @@ export default [
     {
         name: "Ruth",
         symbol: "Ru",
+        category: "history",
         year: "1050-1000 BC",
         era: "judges",
         author: "Samuel",
@@ -66,6 +74,7 @@ export default [
     {
         name: "1 Samuel",
         symbol: "1Sa",
+        category: "history",
         year: "900 BC",
         era: "kingdom",
         author: "Samuel",
@@ -74,6 +83,7 @@ export default [
     {
         name: "1 Samuel",
         symbol: "2Sa",
+        category: "history",
         year: "900 BC",
         era: "kingdom",
         author: "Samuel",
@@ -82,6 +92,7 @@ export default [
     {
         name: "1 Kings",
         symbol: "1Ki",
+        category: "history",
         year: "550 BC",
         era: "kingdom",
         author: "Unknown",
@@ -90,6 +101,7 @@ export default [
     {
         name: "2 Kings",
         symbol: "2Ki",
+        category: "history",
         year: "550 BC",
         era: "kingdom",
         author: "Unknown",
@@ -98,6 +110,7 @@ export default [
     {
         name: "1 Chronicles",
         symbol: "1Ch",
+        category: "history",
         year: "450 BC",
         era: "kingdom",
         author: "Unknown",
@@ -106,6 +119,7 @@ export default [
     {
         name: "2 Chronicles",
         symbol: "2Ch",
+        category: "history",
         year: "340 BC",
         era: "kingdom",
         author: "Unknown",
@@ -114,6 +128,7 @@ export default [
     {
         name: "Ezra",
         symbol: "Er",
+        category: "history",
         year: "450 BC",
         era: "return",
         author: "Ezra",
@@ -122,6 +137,7 @@ export default [
     {
         name: "Nehemiah",
         symbol: "Ne",
+        category: "history",
         year: "425-400 BC",
         era: "return",
         author: "Nehemiah",
@@ -130,6 +146,7 @@ export default [
     {
         name: "Esther",
         symbol: "Es",
+        category: "history",
         year: "450 BC",
         era: "return",
         author: "Unknown",
