@@ -129,9 +129,9 @@ export default [
     },
     {
         name: "Esther",
-        symbol: "return",
+        symbol: "Es",
         year: "450 BC",
-        era: "BC",
+        era: "return",
         author: "Unknown",
         order: 1,
     }

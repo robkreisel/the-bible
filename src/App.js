@@ -7,13 +7,13 @@ import OTChronological from './components/OTChronological';
 function App() {
   return (
     <div>
-      <div className="hidden">
+      <div className="block">
         <OTDetails />
       </div>
       <div className="hidden">
         <NTDetails />
       </div>
-      <div className="block">
+      <div className="hidden">
         <OTChronological />
       </div>
     </div>
