@@ -1,8 +1,5 @@
 import React from "react";
 import Book from "./Book";
-import HistoryBook from './HistoryBook';
-import WritingsBook from './WritingsBook';
-import ProphecyBook from './ProphecyBook';
 import history from '../data/otHistory';
 import writings from '../data/otWritings';
 import prophecy from '../data/otProphecy';
@@ -22,7 +19,7 @@ export default function OTDetails() {
                 <div className="mb-3 text-gray-400">Writings</div>
                 <div className="flex flex-wrap gap-1">
                     {writings.map((book) => (
-                        <WritingsBook book={book} key={book.symbol} />
+                        <Book book={book} key={book.symbol} />
                     ))}
                 </div>
             </div>
@@ -30,7 +27,7 @@ export default function OTDetails() {
                 <div className="mb-3 text-gray-400">Prophecy</div>
                 <div className="flex flex-wrap gap-1">
                     {prophecy.map((book) => (
-                        <ProphecyBook book={book} key={book.symbol} />
+                        <Book book={book} key={book.symbol} />
                     ))}
                 </div>
             </div>
