@@ -16,8 +16,14 @@ export default function Book({ book }) {
     case "prophecy":
       categoryColor = "purple";
       break;
-    default:
+    case "paulsLetter":
+      categoryColor = "blue";
+      break;
+    case "generalLetter":
       categoryColor = "red";
+      break;
+    default:
+      categoryColor = "white";
   }
 
   const colors = {
