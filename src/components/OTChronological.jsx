@@ -1,4 +1,5 @@
 import React from "react";
+import Book from "./Book";
 import HistoryBook from './HistoryBook';
 import WritingsBook from './WritingsBook';
 import ProphecyBook from './ProphecyBook';
@@ -14,7 +15,7 @@ export default function OTChronological() {
                 <div className="mb-3 text-gray-400">Creation</div>
                 <div className="flex flex-wrap gap-1">
                     {history.filter(function (book) { return book.era.includes("creation"); }).map((book) => (
-                        <HistoryBook book={book} key={book.symbol} />
+                        <Book book={book} key={book.symbol} />
                     ))}
                 </div>
             </div>
@@ -22,10 +23,10 @@ export default function OTChronological() {
                 <div className="mb-3 text-gray-400">Patriarch</div>
                 <div className="grid grid-rows-2 gap-1">
                     {history.filter(function (book) { return book.era.includes("patriarch"); }).map((book) => (
-                        <HistoryBook book={book} key={book.symbol} />
+                        <Book book={book} key={book.symbol} />
                     ))}
                     {writings.filter(function (book) { return book.era.includes("patriarch"); }).map((book) => (
-                        <WritingsBook book={book} key={book.symbol} />
+                        <Book book={book} key={book.symbol} />
                     ))}
                 </div>
             </div>
@@ -34,7 +35,7 @@ export default function OTChronological() {
                 <div className="flex">
                     <div className="grid grid-rows-2 grid-cols-2 grid-flow-col gap-1">
                         {history.filter(function (book) { return book.era.includes("exodus"); }).map((book) => (
-                            <HistoryBook book={book} key={book.symbol} />
+                            <Book book={book} key={book.symbol} />
                         ))}
                     </div>
                 </div>
@@ -43,7 +44,7 @@ export default function OTChronological() {
                 <div className="mb-3 text-gray-400">Conquest</div>
                 <div className="flex flex-wrap gap-1">
                     {history.filter(function (book) { return book.era.includes("conquest"); }).map((book) => (
-                        <HistoryBook book={book} key={book.symbol} />
+                        <Book book={book} key={book.symbol} />
                     ))}
                 </div>
             </div>
@@ -51,7 +52,7 @@ export default function OTChronological() {
                 <div className="mb-3 text-gray-400">Judges</div>
                 <div className="grid grid-row-2 gap-1">
                     {history.filter(function (book) { return book.era.includes("judges"); }).map((book) => (
-                        <HistoryBook book={book} key={book.symbol} />
+                        <Book book={book} key={book.symbol} />
                     ))}
                 </div>
             </div>
@@ -60,9 +61,9 @@ export default function OTChronological() {
                 <div className="flex">
                     <div className="grid grid-cols-4 justify-items-end gap-1">
                         {history.filter(function (book) { return book.era.includes("kingdom"); }).map((book) => (
-                            <HistoryBook book={book} key={book.symbol} />
+                            <Book book={book} key={book.symbol} />
                         ))}
-                        <ProphecyBook book={prophecy.find(function (book) { return book.symbol === "Ob" })} />
+                        <Book book={prophecy.find(function (book) { return book.symbol === "Ob" })} />
                     </div>
                 </div>
             </div>
@@ -70,7 +71,7 @@ export default function OTChronological() {
                 <div className="mb-3 text-gray-400">Exile</div>
                 <div className="flex flex-wrap gap-1">
                     {history.filter(function (book) { return book.era.includes("exile"); }).map((book) => (
-                        <HistoryBook book={book} key={book.symbol} />
+                        <Book book={book} key={book.symbol} />
                     ))}
                 </div>
             </div>
@@ -78,7 +79,7 @@ export default function OTChronological() {
                 <div className="mb-3 text-gray-400">Return</div>
                 <div className="flex flex-wrap gap-1">
                     {history.filter(function (book) { return book.era.includes("return"); }).map((book) => (
-                        <HistoryBook book={book} key={book.symbol} />
+                        <Book book={book} key={book.symbol} />
                     ))}
                 </div>
             </div>
