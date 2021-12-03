@@ -13,7 +13,7 @@ function App() {
       <div className="block">
         <NTDetails />
       </div>
-      <div className="hidden">
+      <div className="block">
         <OTChronological />
       </div>
     </div>

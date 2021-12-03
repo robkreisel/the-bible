@@ -1,8 +1,9 @@
 import React from "react";
 import Book from "./Book";
-import history from '../data/otHistory';
+import history from '../data/otBookInformation';
 import writings from '../data/otWritings';
 import prophecy from '../data/otProphecy';
+
 
 export default function OTChronological() {
 
