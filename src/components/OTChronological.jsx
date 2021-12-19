@@ -5,6 +5,9 @@ import data from '../data/otBookInformation';
 
 export default function OTChronological() {
 
+    const kingdomSymbols = ['1Sa', '2Sa', '1Ki', '2Ki'];
+
+
     return (
         <div>
             <div className="m-3 p-3 md:m-10 bg-gray-100 shadow-md overflow-hidden">
@@ -17,16 +20,18 @@ export default function OTChronological() {
             </div>
             <div className="m-3 p-3 md:m-10 bg-gray-100 shadow-md overflow-hidden">
                 <div className="mb-3 text-gray-400">Patriarch</div>
-                <div className="grid grid-rows-2 gap-1">
-                    {data.filter(function (book) { return book.era.includes("patriarch"); }).map((book) => (
-                        <Book book={book} key={book.symbol} />
-                    ))}
+                <div className="flex">
+                    <div className="grid grid-cols-2 gap-1">
+                        {data.filter(function (book) { return book.era.includes("patriarch"); }).map((book) => (
+                            <Book book={book} key={book.symbol} />
+                        ))}
+                    </div>
                 </div>
             </div>
             <div className="m-3 p-3 md:m-10 bg-gray-100 shadow-md overflow-hidden">
                 <div className="mb-3 text-gray-400">Exodus</div>
                 <div className="flex">
-                    <div className="grid grid-rows-2 grid-cols-2 grid-flow-col gap-1">
+                    <div className="grid grid-rows-2 grid-cols-2 gap-1">
                         {data.filter(function (book) { return book.era.includes("exodus"); }).map((book) => (
                             <Book book={book} key={book.symbol} />
                         ))}
@@ -43,20 +48,21 @@ export default function OTChronological() {
             </div>
             <div className="m-3 p-3 md:m-10 bg-gray-100 shadow-md overflow-hidden">
                 <div className="mb-3 text-gray-400">Judges</div>
-                <div className="grid grid-row-2 gap-1">
-                    {data.filter(function (book) { return book.era.includes("judges"); }).map((book) => (
-                        <Book book={book} key={book.symbol} />
-                    ))}
+                <div className="flex">
+                    <div className="grid grid-cols-2 gap-1">
+                        {data.filter(function (book) { return book.era.includes("judges"); }).map((book) => (
+                            <Book book={book} key={book.symbol} />
+                        ))}
+                    </div>
                 </div>
             </div>
             <div className="m-3 p-3 md:m-10 bg-gray-100 shadow-md overflow-hidden">
                 <div className="mb-3 text-gray-400">Kingdom</div>
                 <div className="flex">
-                    <div className="grid grid-cols-4 justify-items-end gap-1">
-                        {data.filter(function (book) { return book.era.includes("kingdom"); }).map((book) => (
-                            <Book book={book} key={book.symbol} />
-                        ))}
-                        <Book book={data.find(function (book) { return book.symbol === "Ob" })} />
+                    <div className="grid grid-rows-4 gap-1">
+                        {kingdomSymbols.map(function (symbol) {
+                            return <Book book={data.find(function (book) { return book.symbol === symbol })} />
+                        })}
                     </div>
                 </div>
             </div>
