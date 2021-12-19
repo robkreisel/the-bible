@@ -81,7 +81,7 @@ export default [
         order: 1,
     },
     {
-        name: "1 Samuel",
+        name: "2 Samuel",
         symbol: "2Sa",
         category: "history",
         year: "900 BC",
