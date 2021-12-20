@@ -197,7 +197,7 @@ export default [
         symbol: "Is",
         category: "prophecy",
         year: "70-680 BC",
-        era: "BC",
+        era: "kingdom",
         author: "Isaiah"
     },
     {
@@ -205,7 +205,7 @@ export default [
         symbol: "Je",
         category: "prophecy",
         year: "585-570 BC",
-        era: "BC",
+        era: "exile",
         author: "Jeremiah"
     },
     {
@@ -213,7 +213,7 @@ export default [
         symbol: "La",
         category: "prophecy",
         year: "585 BC",
-        era: "BC",
+        era: "exile",
         author: "Jeremiah"
     },
     {
@@ -221,7 +221,7 @@ export default [
         symbol: "Ez",
         category: "prophecy",
         year: "590-570 BC",
-        era: "BC",
+        era: "exile",
         author: "Ezekiel"
     },
     {
@@ -229,7 +229,7 @@ export default [
         symbol: "Da",
         category: "prophecy",
         year: "536-530 BC",
-        era: "BC",
+        era: "exile",
         author: "Daniel"
     },
     {
@@ -237,7 +237,7 @@ export default [
         symbol: "Ho",
         category: "prophecy",
         year: "750-710 BC",
-        era: "BC",
+        era: "kingdom",
         author: "Hosea"
     },
     {
@@ -245,7 +245,7 @@ export default [
         symbol: "Jo",
         category: "prophecy",
         year: "Unknown",
-        era: "BC",
+        era: "kingdom",
         author: "Joel"
     },
     {
@@ -253,7 +253,7 @@ export default [
         symbol: "Am",
         category: "prophecy",
         year: "750 BC",
-        era: "BC",
+        era: "kingdom",
         author: "Amos"
     },
     {
@@ -261,7 +261,7 @@ export default [
         symbol: "Ob",
         category: "prophecy",
         year: "Unknown",
-        era: "BC",
+        era: "kingdom",
         author: "Obadiah"
     },
     {
@@ -269,7 +269,7 @@ export default [
         symbol: "Jh",
         category: "prophecy",
         year: "772-754 BC",
-        era: "BC",
+        era: "kingdom",
         author: "Jonah"
     },
     {
@@ -277,7 +277,7 @@ export default [
         symbol: "Mi",
         category: "prophecy",
         year: "735-710 BC",
-        era: "BC",
+        era: "kingdom",
         author: "Micah"
     },
     {
@@ -285,7 +285,7 @@ export default [
         symbol: "Na",
         category: "prophecy",
         year: "650 BC",
-        era: "BC",
+        era: "kingdom",
         author: "Nahum"
     },
     {
@@ -293,7 +293,7 @@ export default [
         symbol: "Ha",
         category: "prophecy",
         year: "640 BC",
-        era: "BC",
+        era: "kingdom",
         author: "Habbakuk"
     },
     {
@@ -301,7 +301,7 @@ export default [
         symbol: "Zp",
         category: "prophecy",
         year: "635-625 BC",
-        era: "BC",
+        era: "kingdom",
         author: "Zephaniah"
     },
     {
