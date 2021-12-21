@@ -8,6 +8,9 @@ export default function OTChronological() {
     const kingdomR2Symbols = ['2Sa', '1Ch', 'Ps'];
     const kingdomR3Symbols = ['1Ki', '2Ch', 'Pr', 'Ec', 'Ss'];
     const kingdomR4Symbols = ['2Ki', 'Ob', 'Jo', 'Jh', 'Am', 'Ho', 'Mi', 'Is', 'Na', 'Zp', 'Ha'];
+    const exileSymbols = ['Ez', 'Je', 'La', 'Da'];
+    const returnR1Symbols = ['Er', 'Es', 'Hg', 'Zc'];
+    const returnR2Symbols = ['Ne', 'Ma'];
 
 
     return (
@@ -88,17 +91,26 @@ export default function OTChronological() {
             <div className="m-3 p-3 md:m-10 bg-gray-100 shadow-md overflow-hidden">
                 <div className="mb-3 text-gray-400">Exile</div>
                 <div className="flex flex-wrap gap-1">
-                    {data.filter(function (book) { return book.era.includes("exile"); }).sort(function (book) { return book.order }).map((book) => (
-                        <Book book={book} key={book.symbol} />
-                    ))}
+                    {exileSymbols.map(function (symbol) {
+                        return <Book book={data.find(function (book) { return book.symbol === symbol })} />
+                    })}
                 </div>
             </div>
             <div className="m-3 p-3 md:m-10 bg-gray-100 shadow-md overflow-hidden">
                 <div className="mb-3 text-gray-400">Return</div>
-                <div className="flex flex-wrap gap-1">
-                    {data.filter(function (book) { return book.era.includes("return"); }).map((book) => (
-                        <Book book={book} key={book.symbol} />
-                    ))}
+                <div className="flex pb-1">
+                    <div className="grid grid-cols-5 gap-1">
+                        {returnR1Symbols.map(function (symbol) {
+                            return <Book book={data.find(function (book) { return book.symbol === symbol })} />
+                        })}
+                    </div>
+                </div>
+                <div className="flex pb-1">
+                    <div className="grid grid-cols-5 gap-1">
+                        {returnR2Symbols.map(function (symbol) {
+                            return <Book book={data.find(function (book) { return book.symbol === symbol })} />
+                        })}
+                    </div>
                 </div>
             </div>
         </div>
