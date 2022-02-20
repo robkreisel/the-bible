@@ -30,10 +30,23 @@ export default function OTChronological() {
         <BookSet symbols={["1Sa"]} />
         <BookSet symbols={["2Sa", "1Ch", "Ps"]} />
         <BookSet symbols={["1Ki", "2Ch", "Pr", "Ec", "Ss"]} />
-        <BookSet symbols={["2Ki"]} />
-        <BookSet
-          symbols={["Ob", "Jo", "Jh", "Am", "Ho", "Mi", "Is", "Na", "Zp", "Ha"]}
-        />
+        <div className="flex gap-1">
+          <BookSet symbols={["2Ki"]} />
+          <BookSet
+            symbols={[
+              "Ob",
+              "Jo",
+              "Jh",
+              "Am",
+              "Ho",
+              "Mi",
+              "Is",
+              "Na",
+              "Zp",
+              "Ha",
+            ]}
+          />
+        </div>
       </div>
       <div className="m-3 p-3 md:m-10 bg-gray-100 shadow-md overflow-hidden">
         <div className="mb-3 text-gray-400">Exile</div>
