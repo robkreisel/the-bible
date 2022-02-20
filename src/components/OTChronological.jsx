@@ -127,19 +127,17 @@ export default function OTChronological() {
             })}
           </div>
         </div>
-        <div className="flex pb-1">
-          <div className="grid grid-cols-11 gap-1">
-            {kingdomR4Symbols.map(function (symbol) {
-              return (
-                <Book
-                  book={data.find(function (book) {
-                    return book.symbol === symbol;
-                  })}
-                  //   key={book.symbol}
-                />
-              );
-            })}
-          </div>
+        <div className="flex flex-wrap gap-1">
+          {kingdomR4Symbols.map(function (symbol) {
+            return (
+              <Book
+                book={data.find(function (book) {
+                  return book.symbol === symbol;
+                })}
+                //   key={book.symbol}
+              />
+            );
+          })}
         </div>
       </div>
       <div className="m-3 p-3 md:m-10 bg-gray-100 shadow-md overflow-hidden">
