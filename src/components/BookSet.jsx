@@ -11,6 +11,7 @@ export default function BookSet(props) {
           book={data.find(function (book) {
             return book.symbol === symbol;
           })}
+          key={symbol}
         />
       ))}
     </div>
