@@ -3,13 +3,14 @@ import "./App.css";
 import OTDetails from "./components/OTDetails";
 import NTDetails from "./components/NTDetails";
 import OTChronological from "./components/OTChronological";
+import NTChronological from "./components/NTChronological";
 // import Nav from "./components/Nav";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
-    this.state = { bookList: "HsCat" };
+    this.state = { bookList: "NcChron" };
   }
 
   handleClick(e) {
@@ -31,7 +32,7 @@ class App extends React.Component {
         displayedBookList = <NTDetails />;
         break;
       case "NcChron":
-        displayedBookList = <NTDetails />;
+        displayedBookList = <NTChronological />;
         break;
       default:
         displayedBookList = <OTDetails />;
