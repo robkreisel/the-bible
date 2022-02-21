@@ -1,6 +1,6 @@
 import React from "react";
 import Book from "./Book";
-import data from "../data/otBookInformation";
+import data from "../data/bookInformation";
 
 export default function BookSet(props) {
   const symbols = props.symbols;
